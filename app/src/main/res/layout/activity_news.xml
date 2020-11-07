@@ -29,7 +29,7 @@
             android:layout_gravity="center"
             android:fontFamily="@font/robotoslab_bold"
             android:gravity="center"
-            android:text="@string/app_name"
+            android:text="Breaking News"
             android:textColor="@color/white"
             android:textSize="22sp"
             android:textStyle="bold"

@@ -6,6 +6,7 @@ import android.os.Build
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
+import com.flobiztest.assignmentapp.AssignmentApp
 
 
 import com.flobiztest.assignmentapp.models.Article
@@ -13,7 +14,7 @@ import com.flobiztest.assignmentapp.models.NewsResponse
 import com.flobiztest.assignmentapp.repository.NewsRepository
 import com.flobiztest.assignmentapp.util.ConnectivityUtil.hasInternetConnection
 import com.flobiztest.assignmentapp.util.Resource
-import com.springr.newsapplication.AssignmentApp
+
 import kotlinx.coroutines.launch
 import okio.IOException
 import retrofit2.Response
