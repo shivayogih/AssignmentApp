@@ -22,13 +22,12 @@ This would return the first 10 posts. Adjust the _page parameter to navigate thr
 API Documentation:
 =======================
 For API interactions, the application utilizes the JSONPlaceholder API. Further details on API usage can be found in the JSONPlaceholder API Documentation.
+ 
 
-https://github.com/shivayogih/AssignmentApp/assets/25000572/b6449e0c-1e9f-4b0f-88b6-bc9451dc04f2
+https://github.com/shivayogih/AssignmentApp/assets/25000572/87d15d51-35c2-49de-9cdf-9dc1d6a74dab
 
-![pagination_img1](https://github.com/shivayogih/AssignmentApp/assets/25000572/6bb6a09a-0c19-4325-baaa-fd071b61c583)
-
-![pagination_img2](https://github.com/shivayogih/AssignmentApp/assets/25000572/4d22c493-77c6-4285-88ad-bc24fc4a4487)
-
+![pagination_img1](https://github.com/shivayogih/AssignmentApp/assets/25000572/6f549133-ae19-4d49-a0be-854e274f449e)
+![pagination_img2](https://github.com/shivayogih/AssignmentApp/assets/25000572/06e3aa61-68e4-49ee-b411-a4c9972e0400)
 
 
 
