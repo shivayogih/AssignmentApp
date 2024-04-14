@@ -9,8 +9,10 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.shivayogi.assignmentapp.ui.theme.Purple40
 
 
 @Composable
@@ -32,13 +34,13 @@ fun StandardToolbar(
                     Icon(
                         imageVector = Icons.Default.ArrowBack,
                         contentDescription = "Back",
-                        tint = MaterialTheme.colors.onBackground
+                        tint = Color.White
                     )
                 }
             }
         } else null,
         actions = navActions,
-        backgroundColor = MaterialTheme.colors.surface,
+        backgroundColor =Purple40,
         elevation = 2.dp
     )
 }

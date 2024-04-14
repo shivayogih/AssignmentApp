@@ -24,29 +24,19 @@ class PostListViewModel @Inject constructor(
 
     var state by mutableStateOf(ScreenState())
 
-
-    private val paginator = DefaultPaginator(
-        initialKey = state.page,
-        onLoadUpdated = {
-            state = state.copy(isLoading = it)
-        },
-        onRequest = { nextPage ->
-            repository.getUserPostList(nextPage, Constants.PAGE_SIZE)
-        },
-        getNextKey = {
-            state.page + 1
-        },
-        onError = {
-            state = state.copy(error = it?.localizedMessage)
-        },
-        onSuccess = { items, newKey ->
-            state = state.copy(
-                items = state.items + items,
-                page = newKey,
-                endReached = items.isEmpty()
-            )
-        }
-    )
+    private val paginator = DefaultPaginator(initialKey = state.page, onLoadUpdated = {
+        state = state.copy(isLoading = it)
+    }, onRequest = { nextPage ->
+        repository.getUserPostList(nextPage, Constants.PAGE_SIZE)
+    }, getNextKey = {
+        state.page + 1
+    }, onError = {
+        state = state.copy(error = it?.localizedMessage)
+    }, onSuccess = { items, newKey ->
+        state = state.copy(
+            items = state.items + items, page = newKey, endReached = items.isEmpty()
+        )
+    })
 
 
     init {
@@ -65,5 +55,5 @@ data class ScreenState(
     val items: List<PostItem> = emptyList(),
     val error: String? = null,
     val endReached: Boolean = false,
-    val page: Int = 0
+    val page: Int = 1
 )

@@ -15,10 +15,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.shivayogi.assignmentapp.data.responses.PostItem
 import com.shivayogi.assignmentapp.ui.components.StandardToolbar
+import com.shivayogi.assignmentapp.ui.theme.Purple40
 import com.shivayogi.assignmentapp.ui.theme.SpaceLarge
 import com.shivayogi.assignmentapp.ui.theme.SpaceMedium
 import com.shivayogi.assignmentapp.util.toObject
@@ -39,13 +39,12 @@ fun PostDetailsScreen(
             navController = navController,
             title = {
                 Text(
-                    text = "Post Details", fontWeight = FontWeight.Bold, color = Color.Blue
+                    text = "Post Details", fontWeight = FontWeight.Bold, color = Color.White
                 )
             },
             modifier = Modifier.fillMaxWidth(),
             showBackArrow = true,
-
-            )
+        )
         LazyColumn(
             modifier = Modifier
                 .fillMaxSize()

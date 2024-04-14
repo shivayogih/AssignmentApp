@@ -10,15 +10,13 @@ import androidx.navigation.navArgument
 import com.shivayogi.assignmentapp.data.responses.PostItem
 import com.shivayogi.assignmentapp.ui.posts.PostDetailsScreen
 import com.shivayogi.assignmentapp.ui.posts.PostListScreen
+import com.shivayogi.assignmentapp.ui.posts.PostListViewModel
 
 
 @Composable
-fun Navigation() {
+fun Navigation(viewModel: PostListViewModel) {
 
     val navController = rememberNavController()
-
-
-
     NavHost(
         navController = navController, startDestination = Screen.PostListScreen.route
     ) {
